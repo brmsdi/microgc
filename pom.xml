@@ -8,23 +8,28 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.micro.gc</groupId>
+	<groupId>micro.gc.datareload</groupId>
 	<artifactId>microgc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microgc.MicroGCApplication</name>
-	<description>Atualizar os dados do sistema de gerenciamento de condom?nios</description>
+	<name>microgc</name>
+	<description>Resetar dados do sistema de gerenciamento de condomínios</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
