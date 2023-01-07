@@ -21,7 +21,7 @@ public class Execute {
     @Autowired
     private ReloadComponent reloadComponent;
 
-    @Scheduled(cron = "0 00 00 * * *", zone = TIME_ZONE)
+    @Scheduled(fixedDelay=1800000)
     private void init()
     {
         authentication.prepareAuth().subscribe(tokenDTO -> {
